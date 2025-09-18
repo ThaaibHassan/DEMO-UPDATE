@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "The New Era of Supply Chain Resilience",
+        "excerpt": "A comprehensive report on how global supply chains are adapting to geopolitical shocks and climate change.",
+        "image": "https://via.placeholder.com/400x250",
+        "date": "2025-01-20",
+        "category": "Report",
+        "type": "report",
+        "downloadUrl": "#",
+        "featured": true,
+        "content": "Full report content would go here..."
+    },
+    {
+        "id": 2,
+        "title": "AI Transformation in Healthcare",
+        "excerpt": "How artificial intelligence is revolutionizing patient care and operational efficiency in healthcare systems.",
+        "image": "https://via.placeholder.com/400x250",
+        "date": "2025-01-18",
+        "category": "Analysis",
+        "type": "analysis",
+        "downloadUrl": "#",
+        "featured": false,
+        "content": "Full analysis content would go here..."
+    },
+    {
+        "id": 3,
+        "title": "Financial Services Digital Revolution",
+        "excerpt": "Examining the rapid digital transformation occurring across financial services and its implications.",
+        "image": "https://via.placeholder.com/400x250",
+        "date": "2025-01-15",
+        "category": "Case Study",
+        "type": "case-study",
+        "downloadUrl": "#",
+        "featured": true,
+        "content": "Full case study content would go here..."
+    },
+    {
+        "id": 4,
+        "title": "Climate Risk Assessment Framework",
+        "excerpt": "A new methodology for assessing and managing climate-related risks in business operations.",
+        "image": "https://via.placeholder.com/400x250",
+        "date": "2025-01-12",
+        "category": "Framework",
+        "type": "framework",
+        "downloadUrl": "#",
+        "featured": false,
+        "content": "Full framework content would go here..."
+    },
+    {
+        "id": 5,
+        "title": "Digital Transformation ROI Analysis",
+        "excerpt": "Measuring the return on investment for digital transformation initiatives across industries.",
+        "image": "assets/digital-transformation.jpg",
+        "date": "2025-01-22",
+        "category": "Research",
+        "type": "research",
+        "downloadUrl": "#",
+        "featured": true,
+        "content": "Full research content would go here..."
+    }
+]

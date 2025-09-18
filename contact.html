@@ -2,11 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#0A0A0A">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Blackwater Industries">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
     <title>Contact — Blackwater Industries</title>
+    <meta name="description" content="Get in touch with Blackwater Industries. Contact our consulting team for strategic advisory, risk management, and technology transformation services. We respond within 1-2 business days.">
+    <meta name="keywords" content="contact us, consulting inquiry, business advisory, strategic consulting, get in touch">
     <link rel="stylesheet" href="css/style.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="assets/TESlogo.svg" as="image">
 </head>
 <body>
 
@@ -40,29 +54,46 @@
                 <div class="contact-card reveal" data-reveal>
                     <form id="contactForm" novalidate>
                         <div id="formMessage" class="form-message" style="display: none;"></div>
+                        <p class="form-note"><span class="required">*</span> Required fields</p>
                         <div class="form-grid">
                             <div class="form-group">
-                                <label for="firstName">First name</label>
-                                <input class="form-control" type="text" id="firstName" name="firstName" placeholder="Jane" required>
+                                <label for="firstName">First name <span class="required">*</span></label>
+                                <input class="form-control" type="text" id="firstName" name="firstName" placeholder="Jane" required autocomplete="given-name">
                             </div>
                             <div class="form-group">
-                                <label for="lastName">Last name</label>
-                                <input class="form-control" type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                                <label for="lastName">Last name <span class="required">*</span></label>
+                                <input class="form-control" type="text" id="lastName" name="lastName" placeholder="Doe" required autocomplete="family-name">
                             </div>
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input class="form-control" type="email" id="email" name="email" placeholder="jane@company.com" required>
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input class="form-control" type="email" id="email" name="email" placeholder="jane@company.com" required autocomplete="email">
                             </div>
                             <div class="form-group">
                                 <label for="company">Company</label>
-                                <input class="form-control" type="text" id="company" name="company" placeholder="Acme Inc.">
+                                <input class="form-control" type="text" id="company" name="company" placeholder="Acme Inc." autocomplete="organization">
                             </div>
                             <div class="form-group full">
-                                <label for="subject">Subject</label>
-                                <input class="form-control" type="text" id="subject" name="subject" placeholder="How can we help?" required>
+                                <label for="subject">Service <span class="required">*</span></label>
+                                <select class="form-control" id="subject" name="subject" required>
+                                    <option value="">Select a service...</option>
+                                    <option value="Strategic Advisory">Strategic Advisory</option>
+                                    <option value="Risk & Compliance">Risk & Compliance</option>
+                                    <option value="Technology & Transformation">Technology & Transformation</option>
+                                    <option value="Research & Analysis">Research & Analysis</option>
+                                    <option value="Digital Transformation">Digital Transformation</option>
+                                    <option value="Cybersecurity">Cybersecurity</option>
+                                    <option value="Financial Services">Financial Services</option>
+                                    <option value="Healthcare Consulting">Healthcare Consulting</option>
+                                    <option value="Energy & Infrastructure">Energy & Infrastructure</option>
+                                    <option value="Partnership Opportunities">Partnership Opportunities</option>
+                                    <option value="Speaking Engagement">Speaking Engagement</option>
+                                    <option value="Media Inquiry">Media Inquiry</option>
+                                    <option value="Career Opportunities">Career Opportunities</option>
+                                    <option value="Other">Other</option>
+                                </select>
                             </div>
                             <div class="form-group full">
-                                <label for="message">Message</label>
+                                <label for="message">Message <span class="required">*</span></label>
                                 <textarea class="form-control" id="message" name="message" placeholder="Share a few details about your needs..." required></textarea>
                             </div>
                         </div>
@@ -108,6 +139,11 @@
                         <a href="#" class="social-link" aria-label="Twitter">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
                         </a>
+                        <a href="https://www.instagram.com/blackwaterindustries.co" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 
@@ -144,10 +180,10 @@
                 <div class="footer-section">
                     <h4>Legal</h4>
                     <ul>
-                        <li><a href="#privacy">Privacy Policy</a></li>
-                        <li><a href="#terms">Terms of Service</a></li>
-                        <li><a href="#cookies">Cookie Policy</a></li>
-                        <li><a href="#disclaimer">Disclaimer</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
                     </ul>
                 </div>
             </div>
@@ -195,7 +231,7 @@
                 }
             });
 
-            // Contact form handling
+            // Contact form handling - Direct WhatsApp integration
             const contactForm = document.getElementById('contactForm');
             const submitBtn = document.getElementById('submitBtn');
             const btnText = submitBtn.querySelector('.btn-text');
@@ -216,6 +252,22 @@
                         const formData = new FormData(contactForm);
                         const data = Object.fromEntries(formData.entries());
 
+                        // Validate required fields
+                        const requiredFields = [
+                            { field: 'firstName', label: 'First name' },
+                            { field: 'lastName', label: 'Last name' },
+                            { field: 'email', label: 'Email' },
+                            { field: 'subject', label: 'Service' },
+                            { field: 'message', label: 'Message' }
+                        ];
+                        
+                        const missingFields = requiredFields.filter(field => !data[field.field]);
+                        if (missingFields.length > 0) {
+                            const fieldNames = missingFields.map(field => field.label).join(', ');
+                            throw new Error(`Please fill in the following required fields: ${fieldNames}`);
+                        }
+
+                        // Send to backend API
                         const response = await fetch('/api/contact', {
                             method: 'POST',
                             headers: {
@@ -228,7 +280,7 @@
 
                         if (result.success) {
                             formMessage.className = 'form-message success';
-                            formMessage.textContent = result.message;
+                            formMessage.innerHTML = '✅ Message sent successfully to WhatsApp! <br><small>You should receive the inquiry in your WhatsApp DMs shortly.</small>';
                             formMessage.style.display = 'block';
                             contactForm.reset();
                         } else {
@@ -236,6 +288,7 @@
                             formMessage.textContent = result.message || 'An error occurred. Please try again.';
                             formMessage.style.display = 'block';
                         }
+
                     } catch (error) {
                         console.error('Form submission error:', error);
                         formMessage.className = 'form-message error';

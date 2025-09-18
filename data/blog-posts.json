@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Resilience is the New Alpha",
+        "excerpt": "An examination of how operational and financial resilience creates durable market advantage in an uncertain world.",
+        "image": "https://via.placeholder.com/600x400",
+        "date": "2025-01-15",
+        "category": "Strategy",
+        "author": "Blackwater Industries",
+        "readTime": "5 min read",
+        "featured": true,
+        "content": "Full article content would go here..."
+    },
+    {
+        "id": 2,
+        "title": "Sustainable Growth in the Digital Age",
+        "excerpt": "How companies can balance rapid digital transformation with long-term sustainability goals.",
+        "image": "https://via.placeholder.com/600x400",
+        "date": "2025-01-10",
+        "category": "Digital Transformation",
+        "author": "Blackwater Industries",
+        "readTime": "7 min read",
+        "featured": false,
+        "content": "Full article content would go here..."
+    },
+    {
+        "id": 3,
+        "title": "The Future of AI in Business",
+        "excerpt": "Exploring how artificial intelligence is reshaping business operations and decision-making.",
+        "image": "https://via.placeholder.com/600x400",
+        "date": "2025-01-05",
+        "category": "Technology",
+        "author": "Blackwater Industries",
+        "readTime": "6 min read",
+        "featured": true,
+        "content": "Full article content would go here..."
+    },
+    {
+        "id": 4,
+        "title": "Cybersecurity in the Modern Enterprise",
+        "excerpt": "A comprehensive guide to building robust cybersecurity frameworks for enterprise organizations.",
+        "image": "assets/cybersecurity.jpg",
+        "date": "2025-01-25",
+        "category": "Security",
+        "author": "Blackwater Industries",
+        "readTime": "8 min read",
+        "featured": false,
+        "content": "Full article content would go here..."
+    }
+]
