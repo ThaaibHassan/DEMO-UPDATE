@@ -1,20 +1,33 @@
-const { createClient } = require('@supabase/supabase-js');
+// Initialize Supabase client with error handling
+let supabase = null;
 
-// Initialize Supabase client
-const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_ANON_KEY;
+try {
+  const { createClient } = require('@supabase/supabase-js');
+  
+  const supabaseUrl = process.env.SUPABASE_URL;
+  const supabaseKey = process.env.SUPABASE_ANON_KEY;
 
-if (!supabaseUrl || !supabaseKey) {
-  console.warn('⚠️  Supabase credentials not found. Database features will be disabled.');
-  console.warn('   Please set SUPABASE_URL and SUPABASE_ANON_KEY in your .env file');
-}
-
-const supabase = supabaseUrl && supabaseKey ? createClient(supabaseUrl, supabaseKey, {
-  auth: {
-    autoRefreshToken: false,
-    persistSession: false
+  if (!supabaseUrl || !supabaseKey) {
+    console.warn('⚠️  Supabase credentials not found. Database features will be disabled.');
+    console.warn('   Please set SUPABASE_URL and SUPABASE_ANON_KEY in your .env file');
+  } else {
+    // Check if we're in a Node.js environment that supports Headers
+    if (typeof Headers === 'undefined') {
+      console.warn('⚠️  Headers not available in this Node.js version. Database features will be disabled.');
+      console.warn('   Please upgrade to Node.js 20+ for full Supabase support.');
+    } else {
+      supabase = createClient(supabaseUrl, supabaseKey, {
+        auth: {
+          autoRefreshToken: false,
+          persistSession: false
+        }
+      });
+    }
   }
-}) : null;
+} catch (error) {
+  console.warn('⚠️  Supabase initialization failed:', error.message);
+  console.warn('   Database features will be disabled.');
+}
 
 // Database operations
 const db = {
