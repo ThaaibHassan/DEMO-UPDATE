@@ -8,6 +8,7 @@ const { body, validationResult } = require('express-validator');
 const compression = require('compression');
 const path = require('path');
 const { db } = require('./supabase');
+const { sendWhatsAppNotification } = require('./whatsapp-integration');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -222,6 +223,18 @@ app.post('/api/contact', contactValidation, async (req, res) => {
     } catch (emailError) {
       console.warn('⚠️  Email sending failed (continuing anyway):', emailError.message);
       // Don't fail the entire request if email fails
+    }
+
+    // Send WhatsApp notification (optional)
+    try {
+      const whatsappResult = await sendWhatsAppNotification(submissionData);
+      if (whatsappResult.success) {
+        console.log('✅ WhatsApp notification sent successfully');
+      } else {
+        console.warn('⚠️ WhatsApp notification failed:', whatsappResult.error);
+      }
+    } catch (whatsappError) {
+      console.warn('⚠️ WhatsApp notification error:', whatsappError.message);
     }
 
     // Log successful submission
