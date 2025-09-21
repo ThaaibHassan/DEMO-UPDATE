@@ -128,12 +128,96 @@
         });
     }
 
+    // MagicBento Tilt Effect Only
+    function initMagicBento() {
+        if (prefersReduced || !window.gsap) return;
+        
+        var cards = document.querySelectorAll('.methodology-step');
+        if (cards.length === 0) return;
+        
+        cards.forEach(function(card) {
+            function handleMouseMove(e) {
+                var rect = card.getBoundingClientRect();
+                var x = e.clientX - rect.left;
+                var y = e.clientY - rect.top;
+                var centerX = rect.width / 2;
+                var centerY = rect.height / 2;
+                
+                var rotateX = ((y - centerY) / centerY) * -10;
+                var rotateY = ((x - centerX) / centerX) * 10;
+                
+                gsap.to(card, {
+                    rotateX: rotateX,
+                    rotateY: rotateY,
+                    duration: 0.1,
+                    ease: 'power2.out',
+                    transformPerspective: 1000
+                });
+            }
+            
+            function handleMouseLeave() {
+                gsap.to(card, {
+                    rotateX: 0,
+                    rotateY: 0,
+                    duration: 0.3,
+                    ease: 'power2.out'
+                });
+            }
+            
+            card.addEventListener('mousemove', handleMouseMove);
+            card.addEventListener('mouseleave', handleMouseLeave);
+        });
+    }
+
+    // Modern micro-interactions
+    function initMicroInteractions() {
+        if (prefersReduced) return;
+        
+        // Add subtle hover effects to interactive elements
+        const interactiveElements = document.querySelectorAll('a, button, .grid-item, .insight-card, .article-card, .testimonial-card');
+        
+        interactiveElements.forEach(function(element) {
+            element.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+            });
+            
+            element.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+        
+        // Add ripple effect to buttons
+        const buttons = document.querySelectorAll('.btn');
+        buttons.forEach(function(button) {
+            button.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.classList.add('ripple');
+                
+                this.appendChild(ripple);
+                
+                setTimeout(function() {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+    }
+
     // Initialize after DOM ready
     document.addEventListener('DOMContentLoaded', function(){
         initReveal();
         initCountUp();
         initParallax();
         initBrandCarousel();
+        initMagicBento();
+        initMicroInteractions();
 
         // Contact form handling is now managed in contact.html
     });

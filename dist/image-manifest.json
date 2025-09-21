@@ -177,10 +177,10 @@
     },
     {
       "path": "ai.jpg",
-      "size": 2342587,
-      "sizeKB": 2288,
+      "size": 5216360,
+      "sizeKB": 5094,
       "extension": ".jpg",
-      "lastModified": "2025-09-18T10:41:58.757Z"
+      "lastModified": "2025-09-18T11:08:00.357Z"
     },
     {
       "path": "favicon.png",
@@ -211,5 +211,5 @@
       "lastModified": "2025-09-18T10:37:42.024Z"
     }
   ],
-  "generated": "2025-09-18T10:55:16.619Z"
+  "generated": "2025-09-21T11:11:06.716Z"
 }
