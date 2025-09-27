@@ -4,6 +4,7 @@
         return Math.min(n, Math.max(e, t));
     }
     document.addEventListener("DOMContentLoaded", function() {
+        var n;
         !function() {
             if (!t && "IntersectionObserver" in window) {
                 var e = new IntersectionObserver(function(t) {
@@ -23,23 +24,23 @@
         }(), function() {
             var n = Array.prototype.slice.call(document.querySelectorAll("[data-countup]"));
             if (0 !== n.length) if (!t && "IntersectionObserver" in window) {
-                var a = new WeakSet, r = new IntersectionObserver(function(t) {
+                var a = new WeakSet, i = new IntersectionObserver(function(t) {
                     t.forEach(function(t) {
-                        t.isIntersecting && !a.has(t.target) && (a.add(t.target), o(t.target), r.unobserve(t.target));
+                        t.isIntersecting && !a.has(t.target) && (a.add(t.target), r(t.target), i.unobserve(t.target));
                     });
                 }, {
                     threshold: .2
                 });
                 n.forEach(function(t) {
-                    r.observe(t);
+                    i.observe(t);
                 });
-            } else n.forEach(o);
-            function o(n) {
-                var a = parseFloat(n.getAttribute("data-countup")) || 0, r = parseInt(n.getAttribute("data-duration") || "1200", 10), o = n.getAttribute("data-prefix") || "", i = n.getAttribute("data-suffix") || "", c = null;
-                t ? n.textContent = o + a.toLocaleString() + i : requestAnimationFrame(function t(s) {
+            } else n.forEach(r);
+            function r(n) {
+                var a = parseFloat(n.getAttribute("data-countup")) || 0, i = parseInt(n.getAttribute("data-duration") || "1200", 10), r = n.getAttribute("data-prefix") || "", o = n.getAttribute("data-suffix") || "", c = null;
+                t ? n.textContent = r + a.toLocaleString() + o : requestAnimationFrame(function t(s) {
                     null === c && (c = s);
-                    var l = e((s - c) / r, 0, 1), u = Math.floor(0 + (a - 0) * l);
-                    n.textContent = o + u.toLocaleString() + i, l < 1 && requestAnimationFrame(t);
+                    var l = e((s - c) / i, 0, 1), u = Math.floor(0 + (a - 0) * l);
+                    n.textContent = r + u.toLocaleString() + o, l < 1 && requestAnimationFrame(t);
                 });
             }
         }(), function() {
@@ -70,7 +71,7 @@
                 var e = document.querySelectorAll(".methodology-step");
                 0 !== e.length && e.forEach(function(t) {
                     t.addEventListener("mousemove", function(e) {
-                        var n = t.getBoundingClientRect(), a = e.clientX - n.left, r = e.clientY - n.top, o = n.width / 2, i = n.height / 2, c = (r - i) / i * -10, s = (a - o) / o * 10;
+                        var n = t.getBoundingClientRect(), a = e.clientX - n.left, i = e.clientY - n.top, r = n.width / 2, o = n.height / 2, c = (i - o) / o * -10, s = (a - r) / r * 10;
                         gsap.to(t, {
                             rotateX: c,
                             rotateY: s,
@@ -98,13 +99,21 @@
                 });
             }), document.querySelectorAll(".btn").forEach(function(t) {
                 t.addEventListener("click", function(t) {
-                    const e = document.createElement("span"), n = this.getBoundingClientRect(), a = Math.max(n.width, n.height), r = t.clientX - n.left - a / 2, o = t.clientY - n.top - a / 2;
-                    e.style.width = e.style.height = a + "px", e.style.left = r + "px", e.style.top = o + "px", 
+                    const e = document.createElement("span"), n = this.getBoundingClientRect(), a = Math.max(n.width, n.height), i = t.clientX - n.left - a / 2, r = t.clientY - n.top - a / 2;
+                    e.style.width = e.style.height = a + "px", e.style.left = i + "px", e.style.top = r + "px", 
                     e.classList.add("ripple"), this.appendChild(e), setTimeout(function() {
                         e.remove();
                     }, 600);
                 });
             });
-        }();
+        }(), (n = document.querySelectorAll(".faq-item")).forEach(function(t) {
+            var e = t.querySelector(".faq-question");
+            e && e.addEventListener("click", function() {
+                var e = t.classList.contains("active");
+                n.forEach(function(e) {
+                    e !== t && e.classList.remove("active");
+                }), e ? t.classList.remove("active") : t.classList.add("active");
+            });
+        });
     });
 }();

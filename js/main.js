@@ -210,6 +210,33 @@
         });
     }
 
+    // FAQ Accordion functionality
+    function initFAQ() {
+        var faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(function(item) {
+            var question = item.querySelector('.faq-question');
+            if (question) {
+                question.addEventListener('click', function() {
+                    var isActive = item.classList.contains('active');
+                    
+                    // Close all other FAQ items
+                    faqItems.forEach(function(otherItem) {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    if (isActive) {
+                        item.classList.remove('active');
+                    } else {
+                        item.classList.add('active');
+                    }
+                });
+            }
+        });
+    }
+
     // Initialize after DOM ready
     document.addEventListener('DOMContentLoaded', function(){
         initReveal();
@@ -218,6 +245,7 @@
         initBrandCarousel();
         initMagicBento();
         initMicroInteractions();
+        initFAQ();
 
         // Contact form handling is now managed in contact.html
     });

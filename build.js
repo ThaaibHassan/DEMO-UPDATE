@@ -20,10 +20,6 @@ function copyStaticFiles() {
     
     const staticFiles = [
         'index.html',
-        'about.html',
-        'Services.html',
-        'industries.html',
-        'contact.html',
         'privacy.html',
         'terms.html',
         'cookies.html',

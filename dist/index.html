@@ -27,279 +27,671 @@
     <header class="main-header">
         <div class="container">
             <nav class="main-nav">
-                <a href="index.html" class="logo"><img src="assets/TESlogo.svg" alt="Blackwater Industries Logo"></a>
+                <a href="#home" class="logo"><img src="assets/TESlogo.svg" alt="Blackwater Industries Logo"></a>
                 <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
                 <ul class="nav-links">
-                    <li><a href="Services.html">Services</a></li>
-                    <li><a href="industries.html">Industries</a></li>
-                    <li><a href="insights.html">Insights</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="blog.html" class="blog-link">BI Blog</a></li>
-                    <li><a href="contact.html" class="login-btn">Contact</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#how-it-works">Process</a></li>
+                    <li><a href="#showcase">Work</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact" class="login-btn">Book a Call</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="content-wrapper home">
-        <section class="hero">
+        <!-- HOME SECTION -->
+        <section id="home" class="hero">
             <div class="hero-background" role="img" aria-label="Professional consulting office background">
                 <div class="hero-overlay"></div>
             </div>
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="subheadline" id="typer-intro">Blackwater Industries</h1>
-                    <h1 id="typer-headline" class="headline-reveal"></h1>
-                    <p class="subheadline" id="typer-sub"></p>
+                    <h1 class="subheadline">Blackwater Industries</h1>
+                    <h1>Creative Excellence. Sustainable Growth. Lasting Impact.</h1>
+                    <p class="subheadline">We empower visionary leaders to navigate complex challenges, drive organizational transformation, and build resilient enterprises that thrive in an ever-evolving landscape.</p>
                     <div class="cta-buttons">
-                        <a href="Services.html" class="btn btn-secondary">What We Do</a>
-                        <a href="about.html" class="btn btn-primary">Who We Are</a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                    <a href="#about" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section style="background-color: var(--section-bg);" data-reveal>
+        <!-- ABOUT US SECTION -->
+        <section id="about">
+            <div class="section-wrapper">
             <div class="container">
-                <div class="section-header" data-reveal>
-                    <span class="subtitle">Core Capabilities</span>
-                    <h2>Where Intelligence Meets Execution</h2>
-                    <p>Our comprehensive approach combines deep industry expertise with cutting-edge methodologies to deliver transformative results that drive sustainable competitive advantage.</p>
+                    <div class="section-header">
+                    <span class="subtitle">About Us</span>
+                    <h2>Where Creative Excellence Meets Business Results</h2>
+                    <p>We're a full-service creative and technology agency that combines strategic thinking with exceptional execution. Our integrated approach ensures your brand, digital presence, and business operations work together seamlessly to drive growth and competitive advantage.</p>
                 </div>
                 <div class="content-grid">
-                    <div class="grid-item" data-reveal>
-                        <h3>Strategic Advisory</h3>
-                        <p>Develop and execute corporate strategy, M&A, and growth initiatives that create lasting competitive advantage in complex markets.</p>
+                        <div class="grid-item">
+                        <h3>Creative & Design Excellence</h3>
+                        <p>From brand identity to user experience, we create compelling visual narratives that resonate with your audience and differentiate your business in competitive markets.</p>
                     </div>
-                    <div class="grid-item" data-reveal>
-                        <h3>Risk & Compliance</h3>
-                        <p>Navigate complex regulatory landscapes, manage geopolitical risk, and build resilient, ethical organizations for the future.</p>
+                        <div class="grid-item">
+                        <h3>Technology & Development</h3>
+                        <p>Custom web applications, mobile solutions, and digital platforms built with modern technologies that scale with your business and deliver exceptional user experiences.</p>
                     </div>
-                    <div class="grid-item" data-reveal>
-                        <h3>Intelligence & Research</h3>
-                        <p>Leverage our proprietary data analytics and expert networks to turn information into a strategic asset and competitive edge.</p>
+                        <div class="grid-item">
+                        <h3>AI & Automation Solutions</h3>
+                        <p>Intelligent automation, AI-powered workflows, and smart integrations that streamline operations, reduce costs, and give you a competitive edge in the digital landscape.</p>
                     </div>
-                    <div class="grid-item" data-reveal>
-                        <h3>Technology & Transformation</h3>
-                        <p>Drive large-scale change programs, from digital modernization to the implementation of enterprise AI solutions.</p>
+                        <div class="grid-item">
+                        <h3>Strategic Business Consulting</h3>
+                        <p>Market analysis, growth strategies, and operational optimization that help you make informed decisions and build sustainable competitive advantages.</p>
                     </div>
                 </div>
-                <div class="text-center" style="margin-top: 3rem;" data-reveal>
-                    <a href="Services.html" class="btn btn-primary">Explore Our Services</a>
-                </div>
-            </div>
-        </section>
-
-        <section data-reveal>
-            <div class="container">
-                <div class="section-header" data-reveal>
-                    <span class="subtitle">Our Approach</span>
-                    <h2>Execution That Delivers Results</h2>
-                    <p>We combine our deep industry knowledge with a collaborative, hands-on approach to help clients define their future, execute with precision and build the internal Services required to sustain success long after we're gone.</p>
-                </div>
-                <div class="two-column-layout">
-                    <div data-reveal>
-                        <h3>Our Services</h3>
-                        <p>Our cross-functional teams work seamlessly to address challenges from every angle, ensuring our solutions are not only innovative but also practical, resilient, and tailor-made for your specific context.</p>
-                        <a href="Services.html" class="btn btn-primary">Explore Our Services</a>
-                    </div>
-                    <div data-reveal>
-                        <ul class="styled-list">
-                            <li><strong>Strategic Advisory</strong><br>Develop and execute corporate strategy, M&A, and growth initiatives that create lasting competitive advantage.</li>
-                            <li><strong>Risk & Compliance</strong><br>Navigate complex regulatory landscapes, manage geopolitical risk, and build resilient, ethical organizations.</li>
-                            <li><strong>Intelligence & Research</strong><br>Leverage our proprietary data analytics and expert networks to turn information into a strategic asset.</li>
-                            <li><strong>Technology & Transformation</strong><br>Drive large-scale change programs, from digital modernization to the implementation of enterprise AI.</li>
-                        </ul>
+                    <div class="text-center" style="margin-top: 3rem;">
+                    <a href="#services" class="btn btn-primary">Explore Our Services</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section style="background-color: var(--section-bg);" data-reveal>
+        <!-- SERVICES SECTION -->
+        <section id="services">
+            <div class="section-wrapper">
             <div class="container">
-                <div class="section-header" data-reveal>
-                    <span class="subtitle">Client Impact</span>
-                    <h2>Transforming Organizations Worldwide</h2>
-                    <p>Our clients span the globe, from Fortune 500 companies to government agencies and emerging enterprises. Here's how we've helped them achieve breakthrough results.</p>
+                <div class="section-header">
+                    <span class="subtitle">Our Services</span>
+                    <h2>How We Help You Succeed</h2>
+                    <p>We provide an integrated suite of services designed to help organizations build lasting advantage. Our expertise spans from strategic planning to hands-on digital transformation.</p>
                 </div>
-                <div class="impact-stats">
-                    <div class="stat-item" data-reveal>
-                        <h3><span data-countup="500" data-suffix="k+" data-prefix="$">$500k+</span></h3>
-                        <p>Value created for clients through strategic initiatives</p>
+                <div class="industries-preview">
+                    <div class="industry-item">
+                        <div class="service-number">#1</div>
+                        <h3>Web Development & Digital Platforms</h3>
+                        <p>Custom websites, e-commerce solutions, enterprise portals, and API integrations that drive business growth and enhance user experiences.</p>
                     </div>
-                    <div class="stat-item" data-reveal>
-                        <h3><span data-countup="98" data-suffix="%">98%</span></h3>
-                        <p>Client satisfaction rate on core projects</p>
+                    <div class="industry-item">
+                        <div class="service-number">#2</div>
+                        <h3>Creative & Visual Design</h3>
+                        <p>Branding, UI/UX design, graphics, motion design, and corporate communications that make an impact and engage your audience.</p>
                     </div>
-                    <div class="stat-item" data-reveal>
-                        <h3><span data-countup="500" data-suffix="+">500+</span></h3>
-                        <p>Successful engagements across 40+ countries</p>
+                    <div class="industry-item">
+                        <div class="service-number">#3</div>
+                        <h3>AI & Automation</h3>
+                        <p>Process automation, AI chatbots, data intelligence, and smart integrations for competitive advantage and operational efficiency.</p>
                     </div>
-                    <div class="stat-item" data-reveal>
-                        <h3><span data-countup="15" data-suffix="+">15+</span></h3>
-                        <p>Years of proven expertise in complex problem-solving</p>
+                    <div class="industry-item">
+                        <div class="service-number">#4</div>
+                        <h3>Business & Strategy Consulting</h3>
+                        <p>Operational consulting, technology strategy, market entry, and investment advisory services for sustainable growth.</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section data-reveal>
-            <div class="container">
-                <div class="section-header" data-reveal>
-                    <span class="subtitle">Featured Insights</span>
-                    <h2>Latest Research & Analysis</h2>
-                    <p>Stay ahead with our latest insights on the most pressing challenges facing business and society today.</p>
-                </div>
-                <div class="insights-grid">
-                    <div class="insight-card" data-reveal>
-                        <div class="insight-meta">
-                            <span class="category">Global Economics</span>
-                            <span class="date">January 2025</span>
-                        </div>
-                        <h3>The Future of Global Supply Chains</h3>
-                        <p>How geopolitical shifts and climate change are reshaping supply chain strategies across industries, and what leaders need to know to build resilience.</p>
-                        <a href="insights.html" class="read-more">Read Full Report →</a>
+                    <div class="industry-item">
+                        <div class="service-number">#5</div>
+                        <h3>Echo AiDockin</h3>
+                        <p>Advanced AI-powered solutions for business automation and intelligent workflow optimization.</p>
                     </div>
-                    <div class="insight-card" data-reveal>
-                        <div class="insight-meta">
-                            <span class="category">Technology</span>
-                            <span class="date">December 2024</span>
-                        </div>
-                        <h3>AI at Scale: Beyond the Hype</h3>
-                        <p>Our comprehensive analysis of how leading organizations are successfully implementing AI at enterprise scale and the key factors that drive success.</p>
-                        <a href="insights.html" class="read-more">Read Analysis →</a>
+                    <div class="industry-item">
+                        <div class="service-number">#6</div>
+                        <h3>Brand Identity</h3>
+                        <p>Complete brand development including logo design, brand guidelines, and visual identity systems.</p>
                     </div>
-                    <div class="insight-card" data-reveal>
-                        <div class="insight-meta">
-                            <span class="category">Sustainability</span>
-                            <span class="date">December 2024</span>
-                        </div>
-                        <h3>ESG as Competitive Advantage</h3>
-                        <p>How environmental, social, and governance factors are becoming critical drivers of business value and market differentiation.</p>
-                        <a href="insights.html" class="read-more">Read Study →</a>
+                    <div class="industry-item">
+                        <div class="service-number">#7</div>
+                        <h3>Website Design</h3>
+                        <p>Custom website design and development with modern UI/UX principles and responsive layouts.</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section style="background-color: var(--section-bg);" data-reveal>
-            <div class="container">
-                <div class="section-header" data-reveal>
-                    <span class="subtitle">Client Testimonials</span>
-                    <h2>What Our Clients Say</h2>
-                </div>
-                <div class="testimonials-grid">
-                    <div class="testimonial-card" data-reveal>
-                        <div class="testimonial-content">
-                            <p>"Blackwater Industries transformed our approach to risk management. Their insights helped us navigate the most challenging period in our company's history while maintaining growth."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <strong>Sarah Chen</strong>
-                            <span>CEO, Global Financial Services</span>
-                        </div>
+                    <div class="industry-item">
+                        <div class="service-number">#8</div>
+                        <h3>Product Design</h3>
+                        <p>End-to-end product design services from concept to launch, including user research and prototyping.</p>
                     </div>
-                    <div class="testimonial-card" data-reveal>
-                        <div class="testimonial-content">
-                            <p>"The strategic guidance we received was exceptional. They didn't just provide recommendations—they helped us build the internal Services to sustain our transformation."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <strong>Michael Rodriguez</strong>
-                            <span>President, Technology Solutions</span>
-                        </div>
+                    <div class="industry-item">
+                        <div class="service-number">#9</div>
+                        <h3>No-code Development</h3>
+                        <p>Rapid application development using no-code platforms for faster time-to-market and cost efficiency.</p>
                     </div>
-                    <div class="testimonial-card" data-reveal>
-                        <div class="testimonial-content">
-                            <p>"Their deep industry knowledge and practical approach delivered results that exceeded our expectations. A true partner in every sense of the word."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <strong>Dr. Elena Volkov</strong>
-                            <span>Director, Healthcare Innovation</span>
+                    <div class="industry-item">
+                        <div class="service-number">#10</div>
+                        <h3>Marketing Materials</h3>
+                        <p>Comprehensive marketing collateral including brochures, flyers, social media assets, and promotional materials.</p>
+                    </div>
+                    <div class="industry-item">
+                        <div class="service-number">#11</div>
+                        <h3>Pitch Decks</h3>
+                        <p>Professional presentation design for investors, clients, and stakeholders with compelling visual storytelling.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section data-reveal>
+        <!-- INDUSTRIES SECTION -->
+        <section id="industries">
+            <div class="section-wrapper">
             <div class="container">
-                <div class="section-header" data-reveal>
+                    <div class="section-header">
                     <span class="subtitle">Industries We Serve</span>
                     <h2>Deep Expertise Across Sectors</h2>
                     <p>We bring specialized knowledge and proven methodologies to help leaders in every industry navigate their unique challenges and opportunities.</p>
                 </div>
                 <div class="industries-preview">
-                    <div class="industry-item" data-reveal>
+                        <div class="industry-item">
                         <h3>Financial Services</h3>
                         <p>Navigating regulatory change, digital disruption, and evolving customer expectations in banking, asset management, and fintech.</p>
                     </div>
-                    <div class="industry-item" data-reveal>
+                        <div class="industry-item">
                         <h3>Healthcare & Life Sciences</h3>
                         <p>Supporting transformation in value-based care, drug development, and patient-centric innovation.</p>
                     </div>
-                    <div class="industry-item" data-reveal>
+                        <div class="industry-item">
                         <h3>Technology & Telecommunications</h3>
                         <p>Guiding digital transformation, platform strategies, and the integration of emerging technologies.</p>
                     </div>
-                    <div class="industry-item" data-reveal>
+                        <div class="industry-item">
                         <h3>Energy & Infrastructure</h3>
                         <p>Helping organizations navigate the energy transition and build sustainable infrastructure for the future.</p>
                     </div>
                 </div>
                 <div class="text-center" style="margin-top: 3rem;">
-                    <a href="industries.html" class="btn btn-secondary">View All Industries</a>
-                </div>
-            </div>
-        </section>
-
-        <section style="background-color: var(--section-bg);" data-reveal>
-            <div class="container">
-                <div class="section-header" data-reveal>
-                    <span class="subtitle">Our Perspective</span>
-                    <h2>Intelligence That Shapes the Future</h2>
-                </div>
-                <div class="article-grid">
-                    <div class="article-card" data-reveal>
-                        <img src="assets/resilience.jpg" alt="Resilience is the new alpha blog image" loading="lazy" width="400" height="250">
-                        <div class="card-content">
-                            <h3>Resilience is the New Competitive Edge</h3>
-                            <p>An examination of how operational and financial resilience creates durable market advantage in an uncertain world.</p>
-                            <a href="blog.html" class="read-more">Read More →</a>
-                        </div>
-                    </div>
-                    <div class="article-card" data-reveal>
-                        <img src="assets/sustainable.jpg" alt="Sustainable growth blog image" loading="lazy" width="400" height="250">
-                        <div class="card-content">
-                            <h3>Sustainable Growth: Beyond the Buzzword</h3>
-                            <p>A deep dive into how companies can embed sustainability into their core strategy for long-term value creation.</p>
-                            <a href="blog.html" class="read-more">Read More →</a>
-                        </div>
-                    </div>
-                    <div class="article-card" data-reveal>
-                        <img src="assets/ai.jpg" alt="AI in corporate strategy blog image" loading="lazy" width="400" height="250">
-                        <div class="card-content">
-                            <h3>AI as a Strategic Asset</h3>
-                            <p>How forward-thinking leaders are using artificial intelligence to unlock new business models and operational efficiencies.</p>
-                            <a href="blog.html" class="read-more">Read More →</a>
-                        </div>
+                    <a href="#contact" class="btn btn-secondary">Discuss Your Industry</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Final CTA Section -->
-        <section class="final-cta" data-reveal>
+        <!-- BENEFITS SECTION -->
+        <section id="benefits">
+            <div class="section-wrapper">
             <div class="container">
-                <div class="section-header" data-reveal>
-                    <span class="subtitle">Ready to Transform Your Organization?</span>
-                    <h2>Let's Build the Future Together</h2>
-                    <p>Partner with Blackwater Industries to navigate complexity, unlock value, and achieve sustainable competitive advantage in an uncertain world.</p>
-                </div>
-                <div class="cta-buttons" data-reveal>
-                    <a href="contact.html" class="btn btn-primary">Start Your Journey</a>
-                    <a href="about.html" class="btn btn-secondary">Learn More About Us</a>
+                    <div class="section-header">
+                        <span class="subtitle">Benefits</span>
+                        <h2>Because Your Success Matters</h2>
+                    </div>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-number">01</div>
+                            <h3>Convert Focused</h3>
+                            <p>Speed means nothing without conversions. Our integrated design, development, and copy work together to drive revenue not just win design awards.</p>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-number">02</div>
+                            <h3>Quick Launch Or Retainer</h3>
+                            <p>Scale up for major launches or down for maintenance. Whether it's a quick landing page or complete rebrand, we adapt to your business needs.</p>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-number">03</div>
+                            <h3>Real-Time Collaboration</h3>
+                            <p>Daily check-ins and rapid iterations keep projects moving. You're always in the loop with feedback cycles that eliminate delays.</p>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    <path d="M8 12l2 2 4-4"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-number">04</div>
+                            <h3>Complete Creative Solution</h3>
+                            <p>While others just do design, we handle copy too. Your entire funnel works together cohesive messaging that actually converts.</p>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="1" x2="12" y2="23"/>
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-number">05</div>
+                            <h3>Transparent Pricing</h3>
+                            <p>Fixed monthly rates or clear project fees. No surprise charges, no scope creep. You know exactly what you're investing.</p>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-number">06</div>
+                            <h3>Real Human Connection</h3>
+                            <p>Bi-weekly video calls keep us aligned on your vision. Real conversations with real people, not just project management tools.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+
+        <!-- HOW IT WORKS SECTION -->
+        <section id="how-it-works">
+            <div class="section-wrapper">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="subtitle">How It Works</span>
+                        <h2>We Lead Design,<br>You Focus On Business</h2>
+                    </div>
+                    
+                    <div class="how-it-works-grid">
+                        <div class="step-item">
+                            <div class="step-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <div class="step-number">STEP 1</div>
+                            <h3>You book a free call</h3>
+                            <p class="step-subtext">We dive deep into your business to uncover design solutions that align with your goals</p>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <div class="step-number">STEP 2</div>
+                            <h3>We assign an expert team</h3>
+                            <p class="step-subtext">To handle all design needs, so you can focus on what really matters growing and scaling your startup.</p>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                                </svg>
+                            </div>
+                            <div class="step-number">STEP 3</div>
+                            <h3>We deliver work daily</h3>
+                            <p class="step-subtext">Stay updated daily on our progress. We're your trusted partner throughout the entire process.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="showcase">
+            <div class="section-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">WANT TO SEE SOME EXAMPLES</span>
+                    <h2>Our Projects</h2>
+                    <p>Explore our portfolio of successful projects that demonstrate our expertise across web development, design, AI automation, and business consulting.</p>
+                </div>
+                
+                <div class="showcase-carousel" id="showcaseCarousel">
+                    <div class="showcase-track" id="showcaseTrack">
+                        <div class="showcase-item">
+                            <div class="showcase-image-card mobile-card">
+                                <img src="assets/mobileapp.png" alt="Mobile App" loading="lazy">
+                            </div>
+                            <div class="card-label">Mobile App</div>
+                        </div>
+                        <div class="showcase-item">
+                            <div class="showcase-image-card webapp-card">
+                                <img src="assets/webapp.png" alt="Web Application" loading="lazy">
+                            </div>
+                            <div class="card-label">Web Application</div>
+                        </div>
+                        <div class="showcase-item">
+                            <div class="showcase-image-card mobile-card">
+                                <img src="assets/mobileapp.png" alt="Mobile App" loading="lazy">
+                            </div>
+                            <div class="card-label">Mobile App</div>
+                        </div>
+                        <div class="showcase-item">
+                            <div class="showcase-image-card webapp-card">
+                                <img src="assets/webapp.png" alt="Web Application" loading="lazy">
+                            </div>
+                            <div class="card-label">Web Application</div>
+                        </div>
+                        <div class="showcase-item">
+                            <div class="showcase-image-card mobile-card">
+                                <img src="assets/mobileapp.png" alt="Mobile App" loading="lazy">
+                            </div>
+                            <div class="card-label">Mobile App</div>
+                        </div>
+                        <div class="showcase-item">
+                            <div class="showcase-image-card webapp-card">
+                                <img src="assets/webapp.png" alt="Web Application" loading="lazy">
+                            </div>
+                            <div class="card-label">Web Application</div>
+                        </div>
+                        <div class="showcase-item">
+                            <div class="showcase-image-card mobile-card">
+                                <img src="assets/mobileapp.png" alt="Mobile App" loading="lazy">
+                            </div>
+                            <div class="card-label">Mobile App</div>
+                        </div>
+                        <div class="showcase-item">
+                            <div class="showcase-image-card webapp-card">
+                                <img src="assets/webapp.png" alt="Web Application" loading="lazy">
+                            </div>
+                            <div class="card-label">Web Application</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING SECTION -->
+        <section id="pricing">
+            <div class="section-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">PRICING</span>
+                    <h2>Ready To Scale Your Conversions?</h2>
+                </div>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                            <div class="pricing-badge">Starter</div>
+                        <div class="pricing-header">
+                                <h3>Quick Launch</h3>
+                                <p class="pricing-description">For business that need high-impact, fast launch.</p>
+                                <p class="pricing-subtext">Perfect for single landing, brand updates, or Key projects.</p>
+                        </div>
+                        
+                        <div class="pricing-content">
+                            <div class="pricing-features">
+                                <h5>What's Included:</h5>
+                                <ul>
+                                    <li>A dedicated Senior Designer</li>
+                                    <li>Design updates every 48 hours</li>
+                                    <li>Optional development in Webflow/Framer</li>
+                                    <li>Seamless workflow via Slack, Loom & Notion</li>
+                                    <li>Transparent flat-rate pricing. No hidden fees or surprise costs</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="pricing-cta">
+                                    <a href="#contact" class="btn btn-primary">Schedule a call</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Monthly Retainer Plan</div>
+                        <div class="pricing-header">
+                            <div class="pricing-price">
+                                <div class="discount-container">
+                                    <span class="original-price">USD 5,000</span>
+                                    <span class="discount-badge">50% OFF</span>
+                                </div>
+                                <span class="price">USD 2,500</span>
+                                <span class="period">/m</span>
+                            </div>
+                                <p class="pricing-description">Scale design, no-code builds & copy quicker than recruiting in-house.</p>
+                                <p class="pricing-subtext">Perfect for growing startups, marketing teams & product-focused brands</p>
+                            <div class="availability">Only 1 spot left</div>
+                        </div>
+                        
+                        <div class="pricing-content">
+                            <div class="pricing-features">
+                                <h5>What's Included:</h5>
+                                <ul>
+                                    <li>Access to a full creative team (Senior Designer, Developers, Copywriter, Project Manager)</li>
+                                    <li>Daily support from senior designers + dedicated project manager</li>
+                                    <li>Unlimited design requests</li>
+                                    <li>48-hour turnaround on most tasks</li>
+                                    <li>Weekly async project updates</li>
+                                    <li>Seamless collaboration via Slack, Loom & Notion</li>
+                                    <li>Flexible: Pause, upgrade, or cancel anytime</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="pricing-cta">
+                                    <a href="#contact" class="btn btn-primary">Secure your spot now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section id="faq" class="faq-section">
+            <div class="section-wrapper">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="subtitle">FAQ</span>
+                        <h2>Frequently Asked Questions</h2>
+                        <p>Everything you need to know about our services, process, and how we work together.</p>
+                    </div>
+                    
+                    <div class="faq-content-wrapper">
+                        <div class="faq-grid">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span class="faq-number">01</span>
+                                    <h3>What services do you offer?</h3>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>We design everything you need for your business: logos, websites, apps, Product and marketing materials. Need a new brand? We'll create it. Want a website? We'll build it. Looking for marketing designs? We've got you covered. You can pick and choose what you need most right now.</p>
+                                </div>
+                            </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-number">02</span>
+                                <h3>How does the Monthly Retainer subscription work?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Our Monthly Retainer subscription gives you access to our full creative team for a fixed monthly rate. You get unlimited design requests, daily support, and 48-hour turnaround on most tasks. It's perfect for growing businesses that need consistent creative output without the overhead of hiring in-house.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-number">03</span>
+                                <h3>What's the difference between the Monthly Subscription and Quick Launch?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>The Monthly Subscription is for ongoing creative needs with unlimited requests and daily support. Quick Launch is perfect for one-off projects like a single landing page, brand update, or specific campaign. Choose based on whether you need ongoing support or have a specific project in mind.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-number">04</span>
+                                <h3>How soon can you start working together?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We can typically start new projects within 1-2 business days of your initial consultation. For urgent projects, we can often accommodate same-day starts depending on our current workload. We'll discuss timelines during our initial call to ensure we can meet your needs.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-number">05</span>
+                                <h3>What do you need to get started?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>To get started, we need a clear brief of your project goals, any existing brand materials, and your preferred communication style. We'll handle the rest! Our team will guide you through our streamlined onboarding process to ensure we have everything needed for success.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-number">06</span>
+                                <h3>Can you work with tight deadlines?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! We specialize in fast turnaround times. Our 48-hour standard turnaround on most tasks means we can handle urgent requests effectively. For rush projects, we can often deliver same-day results. We'll always be transparent about what's possible within your timeframe.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-number">07</span>
+                                <h3>What if I don't have brand guidelines or a clear brand identity?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>No problem! We can help you develop your brand identity from scratch. Our team will work with you to understand your vision, values, and target audience to create a cohesive brand that represents your business authentically. We'll guide you through the entire brand development process.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-number">08</span>
+                                <h3>What platforms and technologies do you use for website development?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We work with modern platforms including Webflow, Framer, WordPress, and custom development. We choose the best technology based on your needs, budget, and long-term goals. Our team stays current with the latest tools and can recommend the optimal solution for your project.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-number">09</span>
+                                <h3>How many requests can I make with the subscription?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>With our Monthly Retainer subscription, you get unlimited design requests. There's no limit to how many projects or revisions you can request. We're here to support all your creative needs, from small tweaks to major campaigns. The only limit is our 48-hour turnaround time per request.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-number">10</span>
+                                <h3>How do we communicate and collaborate during projects?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We use Slack for real-time communication, Loom for video feedback, and Notion for project management. You'll have direct access to your dedicated team and can communicate however you prefer. We also schedule regular check-ins to ensure everything stays on track.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-number">11</span>
+                                <h3>How do I provide feedback on designs and deliverables?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We make feedback easy! You can comment directly on designs, send Loom videos, or use our Slack channels. We prefer detailed feedback to ensure we nail your vision, but we're flexible with whatever communication style works best for you. The goal is clear, actionable feedback that moves projects forward.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-number">12</span>
+                                <h3>Do you handle copywriting, or do I need to provide content?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We handle copywriting as part of our complete creative solution! Our team includes copywriters who can create compelling content that converts. However, if you prefer to provide your own copy, we're happy to work with your content. We'll discuss your preferences during onboarding.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-number">13</span>
+                                <h3>Can I pause or cancel my subscription anytime?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely! Our subscriptions are flexible by design. You can pause, upgrade, or cancel anytime with no penalties. We understand that business needs change, and we want to work with you when it makes sense. Just give us notice so we can wrap up any active projects properly.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-number">14</span>
+                                <h3>What's your refund policy?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We offer a 30-day money-back guarantee for new subscribers. If you're not completely satisfied with our service within the first 30 days, we'll provide a full refund. For ongoing projects, we work on a milestone-based payment system to ensure you're happy with progress before continuing.</p>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <div class="faq-contact-card">
+                            <div class="contact-card-content">
+                                <h3>Feel free to reach out whenever you have questions.</h3>
+                                <p></p>
+                                <a href="https://wa.me/9609336984" class="whatsapp-btn" target="_blank">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                                    </svg>
+                                    Ask a question
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section">
+            <div class="section-wrapper">
+            <div class="container">
+                    <div class="section-header">
+                    <span class="subtitle">Get in Touch</span>
+                    <h2>Ready to Transform Your Organization?</h2>
+                    <p>Tell us about your challenge, and we'll respond within 1–2 business days.</p>
+                </div>
+                
+                <div class="booking-section" style="margin-top: 3rem;">
+                    <h3>Schedule a meeting</h3>
+                    <p>Book a time that works for you to discuss your needs.</p>
+                    <!-- Cal overlay embed code begins -->
+                    <div style="width:100%;height:600px;overflow:hidden" id="my-cal-inline-introductory-meeting"></div>
+                    <script type="text/javascript">
+                      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+                    Cal("init", "introductory-meeting", {origin:"https://app.cal.com"});
+
+                      Cal.ns["introductory-meeting"]("inline", {
+                        elementOrSelector:"#my-cal-inline-introductory-meeting",
+                        config: {"layout":"month_view","overlayCalendar":true},
+                        calLink: "thaaib-hassan-ztrxlh/introductory-meeting",
+                      });
+
+                      Cal.ns["introductory-meeting"]("ui", {"hideEventTypeDetails":false,"layout":"month_view","overlayCalendar":true});
+                    </script>
+                    <!-- Cal overlay embed code ends -->
+                </div>
+                
+                        </div>
+            </div>
+        </section>
+
     </main>
     
     <footer class="main-footer">
@@ -332,30 +724,29 @@
                 <div class="footer-section collapsible-section">
                     <h4 class="footer-toggle">Services <span class="toggle-icon">+</span></h4>
                     <ul class="footer-links">
-                        <li><a href="Services.html">Strategic Advisory</a></li>
-                        <li><a href="Services.html">Risk & Compliance</a></li>
-                        <li><a href="Services.html">Technology & Transformation</a></li>
-                        <li><a href="insights.html">Research & Analysis</a></li>
+                        <li><a href="#services">Strategic Advisory</a></li>
+                        <li><a href="#services">Risk & Compliance</a></li>
+                        <li><a href="#services">Technology & Transformation</a></li>
+                        <li><a href="#insights">Research & Analysis</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section collapsible-section">
                     <h4 class="footer-toggle">Industries <span class="toggle-icon">+</span></h4>
                     <ul class="footer-links">
-                        <li><a href="industries.html">Financial Services</a></li>
-                        <li><a href="industries.html">Healthcare</a></li>
-                        <li><a href="industries.html">Technology</a></li>
-                        <li><a href="industries.html">Energy & Infrastructure</a></li>
+                        <li><a href="#industries">Financial Services</a></li>
+                        <li><a href="#industries">Healthcare</a></li>
+                        <li><a href="#industries">Technology</a></li>
+                        <li><a href="#industries">Energy & Infrastructure</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section collapsible-section">
                     <h4 class="footer-toggle">Company <span class="toggle-icon">+</span></h4>
                     <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="insights.html">Our Insights</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#insights">Our Insights</a></li>
+                        <li><a href="#contact">Book a Call</a></li>
                     </ul>
                 </div>
                 
@@ -394,6 +785,18 @@
     </div>
 
     <script>
+        // Services card toggle functionality
+        function toggleCard(header) {
+            const card = header.closest('.collapsible-card');
+            const isExpanded = card.classList.contains('expanded');
+            
+            if (isExpanded) {
+                card.classList.remove('expanded');
+            } else {
+                card.classList.add('expanded');
+            }
+        }
+
         // Cookie Consent Script + Typewriter
         document.addEventListener('DOMContentLoaded', function() {
             const cookieConsent = document.getElementById('cookieConsent');
@@ -412,10 +815,6 @@
                 }
             }
             const currentFile = normalizePath(location.href);
-            const headlineEl = document.getElementById('typer-headline');
-            const subEl = document.getElementById('typer-sub');
-            const headlineText = 'Navigate Complexity. Unlock Value. Achieve Sustainable Advantage.';
-            const subText = "We partner with leaders across the private, public, and social sectors to solve their most critical challenges, transform their enterprises, and build enduring Services.";
             
             
             // Check if user has already made a choice
@@ -462,37 +861,165 @@
                 });
             });
 
-            // Active nav link
-            document.querySelectorAll('.nav-links a').forEach(function(link) {
-                const href = link.getAttribute('href') || '';
-                if (normalizePath(href) === currentFile) {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Drag and scroll functionality for showcase carousel
+            const showcaseCarousel = document.getElementById('showcaseCarousel');
+            const showcaseTrack = document.getElementById('showcaseTrack');
+            
+            if (showcaseCarousel && showcaseTrack) {
+                let isDown = false;
+                let startX;
+                let scrollLeft;
+                let currentTranslate = 0;
+                let autoScrollInterval;
+                let isUserInteracting = false;
+                
+                // Auto scroll functionality
+                function startAutoScroll() {
+                    if (autoScrollInterval) clearInterval(autoScrollInterval);
+                    autoScrollInterval = setInterval(() => {
+                        if (!isUserInteracting) {
+                            currentTranslate -= 2;
+                            showcaseTrack.style.transform = `translateX(${currentTranslate}px)`;
+                            
+                            // Reset to beginning when reaching the end
+                            const trackWidth = showcaseTrack.scrollWidth;
+                            const containerWidth = showcaseCarousel.offsetWidth;
+                            if (Math.abs(currentTranslate) >= trackWidth - containerWidth) {
+                                currentTranslate = 0;
+                                showcaseTrack.style.transform = `translateX(${currentTranslate}px)`;
+                            }
+                        }
+                    }, 20);
+                }
+                
+                function stopAutoScroll() {
+                    if (autoScrollInterval) {
+                        clearInterval(autoScrollInterval);
+                        autoScrollInterval = null;
+                    }
+                }
+                
+                // Start auto scroll
+                startAutoScroll();
+                
+                // Pause auto scroll on hover
+                showcaseCarousel.addEventListener('mouseenter', () => {
+                    isUserInteracting = true;
+                    stopAutoScroll();
+                });
+                
+                // Resume auto scroll when mouse leaves
+                showcaseCarousel.addEventListener('mouseleave', () => {
+                    isUserInteracting = false;
+                    startAutoScroll();
+                });
+                
+                // Manual drag functionality
+                showcaseTrack.addEventListener('mousedown', (e) => {
+                    isDown = true;
+                    isUserInteracting = true;
+                    stopAutoScroll();
+                    showcaseTrack.classList.add('active');
+                    startX = e.pageX;
+                    scrollLeft = currentTranslate;
+                    showcaseTrack.style.transition = 'none';
+                });
+                
+                showcaseTrack.addEventListener('mouseleave', () => {
+                    isDown = false;
+                    showcaseTrack.classList.remove('active');
+                    showcaseTrack.style.transition = 'transform 0.1s ease-out';
+                });
+                
+                showcaseTrack.addEventListener('mouseup', () => {
+                    isDown = false;
+                    showcaseTrack.classList.remove('active');
+                    showcaseTrack.style.transition = 'transform 0.1s ease-out';
+                    // Resume auto scroll after a delay
+                    setTimeout(() => {
+                        isUserInteracting = false;
+                        startAutoScroll();
+                    }, 2000);
+                });
+                
+                showcaseTrack.addEventListener('mousemove', (e) => {
+                    if (!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX;
+                    const walk = (x - startX) * 1.5;
+                    currentTranslate = scrollLeft + walk;
+                    showcaseTrack.style.transform = `translateX(${currentTranslate}px)`;
+                });
+                
+                // Touch events for mobile
+                let startTouch;
+                let scrollLeftTouch;
+                
+                showcaseTrack.addEventListener('touchstart', (e) => {
+                    isUserInteracting = true;
+                    stopAutoScroll();
+                    startTouch = e.touches[0].pageX;
+                    scrollLeftTouch = currentTranslate;
+                    showcaseTrack.style.transition = 'none';
+                });
+                
+                showcaseTrack.addEventListener('touchmove', (e) => {
+                    e.preventDefault();
+                    const x = e.touches[0].pageX;
+                    const walk = (x - startTouch) * 1.5;
+                    currentTranslate = scrollLeftTouch + walk;
+                    showcaseTrack.style.transform = `translateX(${currentTranslate}px)`;
+                });
+                
+                showcaseTrack.addEventListener('touchend', () => {
+                    showcaseTrack.style.transition = 'transform 0.1s ease-out';
+                    // Resume auto scroll after a delay
+                    setTimeout(() => {
+                        isUserInteracting = false;
+                        startAutoScroll();
+                    }, 2000);
+                });
+            }
+
+            // Active nav link based on scroll position
+            const sections = document.querySelectorAll('section[id]');
+            const navLinksArray = document.querySelectorAll('.nav-links a[href^="#"]');
+
+            function updateActiveNavLink() {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (window.pageYOffset >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinksArray.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
                     link.classList.add('active');
                 }
             });
-
-            // Headline per-word reveal
-            function revealHeadlinePerWord(element, text) {
-                if (!element) return 0;
-                var words = text.split(' ').filter(function(w){ return w.length; });
-                element.innerHTML = words.map(function(w, i){
-                    return '<span class="word" style="--d:'+ i +'">' + w + '</span>';
-                }).join(' ');
-                return words.length;
             }
 
-            // Set subheadline content immediately so layout height is reserved
-            if (subEl) { subEl.textContent = subText; }
+            window.addEventListener('scroll', updateActiveNavLink);
+            updateActiveNavLink(); // Call once on load
 
-            var totalWords = revealHeadlinePerWord(headlineEl, headlineText);
-            // After words animate, set and fade-in subheadline
-            var perWordDelayMs = 140; // match CSS
-            var animDurationMs = 800; // match CSS
-            var totalMs = (totalWords > 0 ? (perWordDelayMs * (totalWords - 1)) : 0) + animDurationMs + 150; // small breathing delay
-            setTimeout(function(){
-                if (subEl) {
-                    subEl.classList.add('visible');
-                }
-            }, totalMs);
 
             // Page initialization complete
         });
