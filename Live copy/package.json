@@ -1,0 +1,32 @@
+{
+  "name": "blackwater-industries-website",
+  "version": "1.0.0",
+  "description": "Blackwater Industries consulting website with WhatsApp integration",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build.js",
+    "build:dev": "NODE_ENV=development node build.js",
+    "dev": "netlify dev",
+    "deploy": "npm run build && netlify deploy --prod --dir=dist",
+    "deploy:preview": "npm run build && netlify deploy --dir=dist",
+    "clean": "rm -rf dist",
+    "preview": "npm run build && netlify dev --dir=dist"
+  },
+  "dependencies": {
+    "three": "^0.180.0",
+    "twilio": "^4.19.0"
+  },
+  "devDependencies": {
+    "clean-css": "^5.3.2",
+    "netlify-cli": "^17.0.0",
+    "terser": "^5.24.0"
+  },
+  "keywords": [
+    "consulting",
+    "whatsapp",
+    "contact-form",
+    "static-site"
+  ],
+  "author": "Blackwater Industries",
+  "license": "MIT"
+}
